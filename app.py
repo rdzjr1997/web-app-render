@@ -60,10 +60,11 @@ with st.container():
     with image_column:
         st.image(img_contact_form)
     with text_column:
-        st.subheader("Following some tutorials for practice")
+        st.subheader("My Mechanical Engineering Blog")
         st.write(
             """
-            By now I am following some basic tutorials for practicing but I have experience with python and some libraries like numpy, pandas, scikit learn, matplotlib and some machine learning algorithm.
+            I created a blog for write about mechanical engineering during my master degree studies.
+            This is something I pretend to continuously update. So, keep an eye!
             """
         )
         st.markdown("Just a markdown")
