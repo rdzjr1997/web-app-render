@@ -3,7 +3,7 @@ import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
 
-st.set_page_config(page_title="My webpage", page_icon=":tada:",layout="wide")
+st.set_page_config(page_title="EngFrancisco", page_icon=":coffee:",layout="wide")
 
 # Creating function to acces the json data of the animation
 def load_lottieurl(url):
@@ -29,8 +29,7 @@ img_contact_form = Image.open("images/image.png")
 with st.container():  # Just to organize the code
     st.subheader("Hi, I am Francisco :wave:")
     st.title("A Mechanical Engineer From Brazil")
-    st.write("I like to develop data analysis and write code for numerical analysis")
-    st.write("[Learn More >](http://engfrancisco.com/)")
+    st.write("I enjoy to develop code for data and numerical analysis")
 
 # ---- What I Do ----
 with st.container():
@@ -41,11 +40,10 @@ with st.container():
         st.write("##")
         st.write(
             """
-            I am a mechanical engineer that works in the area of maintenance including preventive and predictive.
+            I am a mechanical engineer currently working in the steel industry in the areas of mechanical design and maintenance, but who as a passion by data analysis and programming in general.
 
-            Also I am doing my master's degreee in the rotordynamics area, including simulation by the method of finite element for transient contact modelling.
+            In addition, I am doing a master's degree at UFRJ in the area of rotordynamics including the creation of a numerical code for modeling the transient response during rotor-stator contact by the finite element method.
 
-            I am very passionate about the data and programming area, so I will work very hard with these things
             """
         )
     with right_column: # Inserting the animation
@@ -64,10 +62,23 @@ with st.container():
         st.write(
             """
             I created a blog for write about mechanical engineering during my master degree studies.
-            This is something I pretend to continuously update. So, keep an eye!
+            This is something I pretend to continuously update. So, [keep an eye">](http://engfrancisco.com/)
             """
         )
-        st.markdown("Just a markdown")
+
+    st.write("##") # Space
+    image_column, text_column = st.columns((1,2)) # The text column is twice the image column
+    with image_column:
+        st.image(img_contact_form)
+    with text_column:
+        st.subheader("Exploratory Data Analysis (EDA)")
+        st.write(
+            """
+            The Exploraroty Data Analysis is very important to get insights about the data. in this project I made and EDA of the Top 50 Spotify Songs - 2019.
+
+            Enjoy
+            """
+        )
 
 # --- CONTACT
 with st.container():
